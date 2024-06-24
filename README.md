@@ -1,2 +1,3 @@
-# paperImplementations
-ACM Research team paper implementations.
+# Summer Paper Implementations
+
+Hey team!
