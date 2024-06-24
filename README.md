@@ -1,5 +1,7 @@
-![ACM Research Banner Light](https://github.com/ACM-Research/paperImplementations/assets/108421238/467a89e3-72db-41d7-9a25-51d2c589bfd9)
+# GPT 1 Implementation
 
-# Summer Paper Implementations
+This is an implementation of the basic framework of GPT 1 from the paper
+"Improving Language Understanding by Generative Pre-Training"  
+It's trained on the OpenWebCorpus. The model I trained for around 10 hours is stored on a pkl, file which is not included because of space saving, although I can provide it if asked. But you can see the remnants of the code in gpt.ipynb where the pkl file would've gone.
 
-Hey team! Go ahead and clone the repo, add your own branch (just title it your name) with all your files and read.me with your synopsis, and then publish your new branch. Let us know if any of y'all have access issues.
+The synopsis and notes I took on the paper are in synopsis.md
