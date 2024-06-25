@@ -1,0 +1,21 @@
+
+Title: CyberPolice (?): Enhancing generalization reinforcement learning with cybersecurity
+
+Overview: Most malware detection software uses a signature based approach which is quickly becoming more inadequate because of the shear amount of new malware samples being found every day as well as each environment having unique binaries the software could have never experienced. The ideal way to improve the current systems would use dynamic analysis of features obtained through analyzing software execution, however this technique involves too much complexity and is too computational expensive. By taking a static analysis route, (looking solely into parts of the information that can be gathered by the binary program without running it and build a model based off of D-CNN and RNN, efficiency in detecting malware can be improved.
+
+Limitations/ Weakness
+•	Mostly restricted to the Portable Executable file header
+•	Unable to conduct dynamic analysis which is more conducive to real world settings
+•	real life malware is often updated in real time and can be adjusted to avoid detection
+•	Computational Expensive
+
+Strengths
+•	Rapidly enhance response time to threats
+•	Allows for handling of more sophisticated attacks 
+	
+
+Novelty
+•	Automatization of cyber agents
+•	Having a dynamic reward system
+
+
