@@ -4,8 +4,7 @@
 
 To install the necessary packages for this project, use the provided `requirements.txt` file. You can install the dependencies by running:
 
-```bash
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 ## Papers Read
 
