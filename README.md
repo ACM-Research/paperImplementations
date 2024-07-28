@@ -1,44 +1,48 @@
 ![ACM Research Banner Light](https://github.com/ACM-Research/paperImplementations/assets/108421238/467a89e3-72db-41d7-9a25-51d2c589bfd9)
 
+## Requirements
+
+To install the necessary packages for this project, use the provided `requirements.txt` file. You can install the dependencies by running:
+
+```bash
+pip install -r requirements.txt
+
 ## Papers Read
 
-1. "Deep Residual Learning for Image Recognition"
-2. "ImageNet Classification with Deep Convolutional Neural Networks"
-3. "Very Deep Convolutional Networks for Large-Scale Image Recognition"
-4. "Convolutional Neural Networks for Visual Recognition"
-5. "Understanding and Improving Convolutional Neural Networks via Concatenated Rectified Linear Units"
+1. A systematic comparison of deep learning methods for EEG time series analysis
+2. Multi-disease Prediction Using LSTM Recurrent Neural Networks
+3. Using recurrent neural network models for early detection of heart failure onset
 
-## Paper 1 Chosen
+## Paper 2 Chosen
 
-**"ImageNet Classification with Deep Convolutional Neural Networks"**
+**"Multi-disease Prediction Using LSTM Recurrent Neural Networks"**
 
-## Summary of Paper 1
+## Summary of Paper
 
-The paper "ImageNet Classification with Deep Convolutional Neural Networks" by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton (2012) introduces AlexNet, a deep convolutional neural network (CNN) that significantly advanced computer vision. Designed for the ImageNet LSVRC-2010 contest, AlexNet is made of eight layers: five convolutional layers with some followed by max pooling layers, and three fully connected layers with a final 1000 way softmax. Key innovations include the use of Rectified Linear Unit (ReLU) activation functions to accelerate training, and dropout regularization to prevent overfitting. Trained on two GPUs, AlexNet achieved a top 5 error rate of 15.3%, over 10% better than previous state-of-the-art, validating the efficacy of deep CNNs for large-scale image classification.
+The paper "Multi-disease Prediction Using LSTM Recurrent Neural Networks" discusses the application of LSTM networks for predicting multiple diseases using EHR data. LSTMs are well-suited for this task due to their ability to maintain information over time and capture long-term dependencies in sequential data. The study demonstrates improved prediction accuracy for various medical conditions compared to traditional models.
 
 ## Justification for the Approach
 
-The authors highlighted the strengths of CNNs in processing visual data. Unlike traditional methods that require manually crafted features, CNNs automatically learn features from raw pixel data through convolutional operations, simplifying the process and improving pattern recognition. Using ReLU activation functions sped up training, making it feasible to train deeper networks. Dropout regularization effectively prevented overfitting, enhancing the network's performance. Additionally, training on multiple GPUs efficiently managed the computational demands of their deep network.
+The authors highlight the strengths of LSTMs in processing sequential and temporal data found in EHRs. Unlike traditional machine learning methods that may struggle with sequential dependencies, LSTMs excel by maintaining information over time through their gated architecture. This ability allows for more accurate modeling of patient history, leading to better prediction of disease onset and progression.
 
 ## Evaluation of Strengths and Weaknesses
 
 **Strengths:**
-- Demonstration of deep CNNs' effectiveness in large-scale image classification.
-- Introduction of ReLU activation functions, speeding up training and improving performance.
-- Dropout regularization to prevent overfitting, now a standard method.
-- Use of two GPUs for hardware-accelerated training.
-- Significant advancement in the field, setting new benchmarks compared to earlier methods.
+- Demonstrates the effectiveness of LSTMs in handling sequential medical data.
+- Captures temporal dependencies in patient histories, improving prediction accuracy.
+- Applicable to a wide range of diseases, making the approach versatile.
+- Outperforms traditional models that do not handle temporal data as effectively.
 
 **Weaknesses:**
-- Training deep networks like AlexNet requires substantial computational resources.
-- Dropout introduces additional hyperparameters that need tuning.
-- Fixed input size requirement can lead to information loss when resizing images.
-- Future research could focus on optimizing training efficiency, developing networks that handle variable input sizes, and extending CNN applications beyond image classification to tasks like object detection and segmentation.
+- Requires substantial computational resources for training.
+- The complexity of the model may lead to overfitting if not properly regularized.
+- LSTMs may struggle with very long sequences due to vanishing gradient issues, despite their gated architecture.
+- Future research could explore optimizing model efficiency and extending applications to real-time disease monitoring and prediction.
 
-## Some Novelties Noticed in Paper 1
+## Some Novelties Noticed in the Paper
 
-- **Deep architecture:** AlexNet was one of the first networks to demonstrate the effectiveness of very deep architectures for image classification, significantly outperforming shallower networks.
-- **ReLU activation function:** The use of the Rectified Linear Unit as an activation function was a big innovation. ReLU helps mitigate the vanishing gradient problem, allowing networks to train faster and achieve better performance.
-- **Dropout regularization:** The introduction of dropout as a regularization technique to prevent overfitting was novel and has since become a standard practice in training deep neural networks.
-- **GPU utilization:** The parallelization of training across two GPUs was a significant step, making it feasible to train large models efficiently.
-- **Large-scale dataset:** The successful application of CNNs to the ImageNet dataset, which contains millions of images.
+- **Sequential data processing:** The use of LSTM networks to handle sequential data in EHRs, capturing long-term dependencies that traditional models might miss.
+- **Temporal dependency modeling:** The ability of LSTMs to maintain information over long sequences, leading to improved disease prediction.
+- **Versatility in application:** The model's applicability to predicting multiple diseases from EHRs, showcasing its broad potential in healthcare.
+- **Enhanced accuracy:** Demonstrated improvement in prediction accuracy over traditional models, validating the efficacy of LSTMs for this application.
+
