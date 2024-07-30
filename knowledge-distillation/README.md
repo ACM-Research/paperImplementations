@@ -1,0 +1,7 @@
+# Synopsis
+
+*Distilling the Knowledge in a Neural Network* is a foundational paper that proposes a method for "distilling knowledge" from a larger, more cumbersome model (or ensemble thereof) into a more lightweight model with less parameters, while preserving most of the accuracy/performance. The key idea in this paper is that rather than simply training the smaller model on the larger one's final outputs, the smaller model actually trained on the softmaxed logits from the larger one, enabling the student to more effectively learn the teacher's generalizations and reduce risk of the smaller model simply overfitting to the training examples. 
+
+# Evaluation
+
+Though almost common sense by now, this paper was rather groundbreaking at the time of publication. Its biggest strength is the novel idea of using higher temperatures to produce 'soft targets' and training the student match them, which allowed more naunce to be captured in the distillation than prior work which only matched final outputs or logits. The only weaknesses that I could pick out are that this method doesn't lower the resources needed for training but only for inference, as a large and accurate model needs to be trained first to distill from. The other potential weakness is that, going off of this paper, it seems that an ideal temperature value must be empirically found which would of course require more resources. These weaknesses are much outweighed by the method's novelty and utility, and this is reflected in the technique's prominence today, so many years after publication.
