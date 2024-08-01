@@ -1,0 +1,25 @@
+
+Title: MorphBodies (?): Evolutionary AI to improve soft robotic
+
+Overview: By using Evogym, I am able to perform an experiment on different types of modular controllers on multiple different soft robots; it allows for speculative use of actuators and compares its with previous versions of the current robots body with an evolutionary algorithm to find better and more efficient flexible robotic designs.
+
+
+Limitations/Weakness
+•	Only is 2D and therefore not completely realistic
+•	limited environment choices
+
+Strengths
+•	Rapidly optimize different control features 
+•	Allows for computer design prototyping  
+•	Allows for Brain and Body optimization 
+	
+
+Novelty
+•	Evolutionary Algorithms
+•	using Soft Robots to do normal tasks
+
+https://arxiv.org/pdf/2306.09358v1
+https://arxiv.org/abs/2311.00462
+https://arxiv.org/pdf/2407.16613
+
+Professor Nghe

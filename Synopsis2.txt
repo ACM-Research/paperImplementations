@@ -1,0 +1,26 @@
+Research Question: How can ML and AI be used to enhance human robot interaction with soft robots? Moreover, how can AI be used to improve the robots usability in dynamic, unpredictable spaces (such as in water, underground, or in space)?
+-----------------------------------------------------------------------
+
+Summary: I would like to experiment with building a soft robot from scratch using a 3D printed design as a mold as well as EcoFlex (or another light type of silicon), some type of actuator (TBD whether pneumatic, hydraulic, or electromagnetic), a microcontroller, and possibly thin pressure sensors; this research would experiment with different types of designs for this robot that would allow for better mobility, or another function that has not been explored yet. Finally, the experiment would allow for AI to be incorporated, allowing for more automated work in any field that may benefit from the robot.
+----------------------------------------------------------------------
+Methodology and Resources:
+This would involve researching/ discovering possible invertebrate animals to base designs off of while also using a ML model to teach to robot how to interact with its environment. The project itself would require access to 3D-printers and a software such as SolidWorks for 3D design purposes, EcoFlex ( or some other type of silicon) to use for the body of the robot as it is a very flexible and stretchy substance, (possibly) pressure sensors ( still researching which types would be best) to connect to computer and read data to use for ML, a microcomputer, and I assume everyone would have their own computer.
+----------------------------------------------------------------------
+Annotated Bibliography: This concerns your primary research papers for the entire project. You should have 2-5 primary sources and any secondary sources if available. Include your specific source and a one-paragraph description of the paper, what was accomplished, and any evaluations you have regarding the study. Reach out if you need help accessing or finding sources.
+
+https://www.science.org/doi/10.1126/scirobotics.aaz9239 
+
+Soft robots allows gentle contact with their environment however it is quite challenging to integrate sensors into the soft material that is the body of the robot. This paper looks into combining e-skins and machine learning.
+
+                                  --------------------
+https://news.rice.edu/news/2022/fluidic-circuits-add-analog-options-controlling-soft-robots
+
+This paper looks into using different control systems that better work with soft robotics-- using hydraulic actuators and fluidic circuits
+                                  --------------------
+https://armlab.gatech.edu/research-2/current/soft-pneumatic-actuators/
+
+The paper researches the use of pneumatic actuators to move robots in ways that use compliant and lightweight materials that are more suited to human interactions
+
+
+
+
