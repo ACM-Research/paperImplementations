@@ -2,17 +2,25 @@
 
 ## Key Concept
 
-Iterative Denoising Process:
-DDPM gradually transforms noise into a desired image through a series of denoising steps. This process allows for high-quality image generation by learning to reverse a fixed Markov chain that gradually adds noise to data.
+Objective: The goal of DDPM is to generate high-fidelity images by learning to reverse a diffusion process that gradually adds noise to data. This approach aims to improve image generation quality by leveraging a sophisticated denoising mechanism.
+
+Denoising Diffusion Process: The core idea is to model the reverse process of adding Gaussian noise to data, progressively reconstructing the original data from noise. This involves training a neural network to predict the noise added at each step of the diffusion process.
+
+Model Architecture: DDPM utilizes a U-Net architecture for the denoising network. The network is trained to predict the added noise at each diffusion step, enabling it to generate high-quality samples by iteratively refining noisy data.
+
+## Why?
+
+High-Quality Image Generation: The authors chose the denoising diffusion approach because it offers a compelling alternative to traditional generative models like GANs and VAEs, addressing limitations such as mode collapse and poor sample diversity.
+
+Effective Noise Modeling: By explicitly modeling the noise addition process and using a neural network to reverse it, DDPM can capture complex data distributions and generate high-quality samples.
 
 ## Strengths
 
-- High-quality image generation
-  > DDPMs can generate samples of comparable quality to GANs on image synthesis benchmarks, while offering a more stable training process.
-- Flexible architecture
-  > The model can be adapted to various image sizes and types without significant changes to the core architecture.
-- Tractable likelihood computation
-  > Unlike GANs, DDPMs allow for direct optimization of log-likelihood, providing a clear training objective.
+High-Fidelity Generation: DDPM achieves impressive results in generating high-quality images, demonstrating superior performance compared to existing generative models on benchmark datasets.
+
+Stable Training: The diffusion process provides a stable training framework, avoiding issues such as mode collapse commonly encountered with GANs.
+
+Flexibility: The model can be adapted to various data types and tasks, making it a versatile tool for generative modeling.
 
 ## Weaknesses
 
@@ -43,8 +51,9 @@ Noise Schedule: The model uses a fixed noise schedule for adding noise during tr
 
 ## Previous Literature
 
-- Score-based generative models and noise-conditioned score networks (NCSN) laid groundwork for gradient-based sampling methods
-- Variational autoencoders (VAEs) introduced the concept of latent variable models for image generation
+Generative Models: Previous models like GANs and VAEs have laid the groundwork for generative modeling, but they often face issues like instability and limited diversity. DDPM builds on these concepts by introducing a more stable and flexible approach.
+
+Diffusion Processes: The concept of diffusion processes has been explored in other contexts, such as image denoising and natural language processing. DDPM extends this idea to generative modeling, applying it to create high-quality images.
 
 ## Comparison
 
@@ -68,10 +77,11 @@ Noise Schedule: The model uses a fixed noise schedule for adding noise during tr
 - Start from pure noise and iteratively apply the learned denoising process
 - Can use fewer sampling steps than training steps for faster generation
 
-## Image Generation Benchmarks
+## Experiments
 
-- CIFAR-10, CelebA-HQ, LSUN
-- Evaluation metrics: Inception Score (IS), Fréchet Inception Distance (FID)
+Benchmark Datasets: The authors evaluate DDPM on several benchmark datasets, demonstrating its effectiveness in generating high-fidelity images. The results show that DDPM surpasses traditional generative models in terms of image quality and diversity.
+
+Training Specifications: The paper details the training setup, including the use of a U-Net architecture, specific noise schedules, and optimization techniques to achieve stable and effective training.
 
 ## Ablation Studies
 
